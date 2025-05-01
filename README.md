@@ -93,25 +93,6 @@ Map-Reduce communication statistics available in the project report.
 ### Classification Results
 Full performance metrics (precision, recall, F1) available in the project report.
 
-## Project Structure
-
-```
-src/main/java/
-├── App.java                  # Main application orchestrating EMR
-├── ApplicationConfig.java    # Configuration settings
-├── AssociationWritable.java  # Writable for association measures
-├── FeatureArray.java         # Top features management
-├── GS.java                   # Gold Standard dataset accessor
-├── MyHashMapWritable.java    # Custom HashMap implementation for Hadoop
-├── SortFeatures.java         # Feature selection step
-├── Stemmer.java              # Porter Stemmer implementation
-├── Step1.java                # Build co-occurrence vectors
-├── Step1_5.java              # Count feature occurrences
-├── Step2.java                # Compute association measures
-├── Step3.java                # Calculate vector similarities
-└── Step4.java                # Classification and evaluation
-```
-
 ## Notes
 
 - The system uses a Porter Stemmer to normalize words before processing
@@ -119,13 +100,6 @@ src/main/java/
 - The system disregards the top 100 most frequent features to reduce noise
 - Performance scales with the number of EMR instances
 - Results may vary based on the specific corpus files used
-
-## Debugging
-
-- Check EMR logs for errors in each step
-- EMR console provides detailed job tracking
-- Set logging level in the application for more verbose output
-- Common issues include S3 permission problems and memory limitations
 
 ## References
 
