@@ -91,7 +91,7 @@ The system was tested on:
 Map-Reduce communication statistics available in the project report.
 
 ### Classification Results
-Full performance metrics (precision, recall, F1) available in the output of Step 4.
+Full performance metrics (precision, recall, F1) available in the project report.
 
 ## Project Structure
 
