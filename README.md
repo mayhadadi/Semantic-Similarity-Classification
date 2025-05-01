@@ -62,9 +62,6 @@ The system is structured as a multi-step MapReduce workflow:
 
 ## Key Components
 
-### MyHashMapWritable
-Custom Writable implementation for storing word-feature co-occurrence data efficiently.
-
 ### Association Measures
 Four methods implemented:
 - Raw frequency
